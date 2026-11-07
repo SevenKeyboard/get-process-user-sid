@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsAotCompatible>true</IsAotCompatible>
+    <Version>1.0.0</Version>
+    <Authors>SevenKeyboard Ltd.</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/SevenKeyboard/get-process-user-sid</RepositoryUrl>
+    <Description>Returns the current Windows process user SID, or an empty string on native failure.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="smoke/**/*.cs" />
+    <InternalsVisibleTo Include="SevenKeyboard.GetProcessUserSid.Smoke" />
+  </ItemGroup>
+</Project>
